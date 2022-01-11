@@ -2,6 +2,7 @@
   "expo": {
     "name": "linking-authentication",
     "slug": "linking-authentication",
+    "scheme": "lauth",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -26,7 +27,18 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyC2xOcq3ik9eI_9Kw2qJKlxwTc3FUSYW_s",
+          "authDomain": "rena-6b565.firebaseapp.com",
+          "projectId": "rena-6b565",
+          "storageBucket": "rena-6b565.appspot.com",
+          "messagingSenderId": "1025557623063",
+          "appId": "1:1025557623063:web:391de90fe4a7a61d1e4752",
+          "measurementId": "G-PRGZM2Y1QG"
+        }
+      }
     }
   }
 }
