@@ -13,7 +13,7 @@ import * as React from 'react';
 import { ColorSchemeName, InteractionManager } from 'react-native';
 
 import { DeepLinkEnum, useDeepLinks } from '../providers/DeepLink';
-import { checkDeepLinkResult, navigationRef } from './linking';
+import { checkDeepLinkResult, linking, navigationRef } from './linking';
 import RootNavigator from './RootNavigator';
 
 export default function Navigation({
@@ -50,6 +50,7 @@ export default function Navigation({
     <NavigationContainer
       ref={navigationRef}
       theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}
+      linking={linking}
     >
       <RootNavigator />
     </NavigationContainer>
